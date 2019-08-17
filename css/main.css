@@ -57,6 +57,10 @@ button, input {
   outline: 0;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -135,12 +139,11 @@ body {
 
 .wrapper .main article h2 {
   font-weight: 800;
-  text-transform: uppercase;
   font-size: 120px;
   line-height: 120px;
 }
 
-.wrapper .main article h3 {
+.wrapper .main article p {
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
@@ -179,5 +182,55 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
+}
+
+.slide-wrapper {
+  width: 100%;
+  height: auto;
+  background: #F6BEBD;
+}
+
+.slide-wrapper .content {
+  padding: 100px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+.slide-wrapper .content .figure-wrapper figure {
+  width: 100%;
+}
+
+.slide-wrapper .content .figure-wrapper figure img {
+  width: auto;
+}
+
+.slide-wrapper .content .figure-content {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 100px;
+}
+
+.slide-wrapper .content .figure-content h2 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.slide-wrapper .content .figure-content p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  padding: 20px 0;
 }
 /*# sourceMappingURL=main.css.map */
