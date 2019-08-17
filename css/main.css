@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button, input {
+  outline: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  background: #F3E9E1 url(../images/front-image.png) no-repeat 85% 100%;
+  background-size: 45%;
+}
+
+.wrapper header {
+  padding: 20px 150px;
+}
+
+.wrapper header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper header .nav img {
+  width: 157px;
+  height: 56px;
+}
+
+.wrapper header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.wrapper header .nav ul li {
+  list-style-type: none;
+}
+
+.wrapper header .nav ul li .nav-links {
+  text-decoration: none;
+  display: block;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.wrapper header .nav ul li .transparent {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.wrapper header .nav ul li .background {
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.wrapper .main {
+  padding: 160px 150px;
+}
+
+.wrapper .main article {
+  width: 50%;
+}
+
+.wrapper .main article h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 120px;
+  line-height: 120px;
+}
+
+.wrapper .main article h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 20px 0;
+}
+
+.wrapper .main article .search-wrapper {
+  padding-top: 30px;
+  width: 80%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .main article .search-wrapper .email-field {
+  height: 60px;
+  width: 95%;
+  font-size: 20px;
+  padding: 0 10px;
+  border: none;
+}
+
+.wrapper .main article .search-wrapper .search_button {
+  height: 60px;
+  width: 100px;
+  background: #5747e2;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,127 @@
+@import "_css-reset";
+// @include font-face('Helvetica Neue', css/fonts/HelveticaNowDisplayXBlk, 500, normal, eot woff2 woff);
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    // background-color: #F3E9E1;
+    background: #F3E9E1 url(../images/front-image.png) no-repeat 85% 100%;
+    background-size: 45%;
+
+
+    header{
+        padding: 20px 150px;
+
+
+
+        .nav{
+            display: flex;
+
+
+            img{
+                width: 157px;
+                height: 56px;
+            }
+            ul{
+                display: flex;
+                justify-content: flex-end; 
+                padding: 0;
+                flex: 1;
+
+                li{
+                    list-style-type: none;
+
+
+                    .nav-links{
+                        text-decoration: none;
+                        display: block;
+                        padding: 15px 30px;
+                        text-transform: uppercase;
+                        margin-left: 10px;   
+                    }
+                    .transparent{
+                        background: transparent;
+                        border: 2px solid #000;
+                        color: #000;
+                    }
+
+                    .background{
+                        background: #000;
+                        color: #fff;
+                        border: 2px solid #000;
+                    }
+                }
+            }
+
+            
+        }   
+    }
+
+    //main begins
+
+    .main{
+        padding: 160px 150px;
+        article{
+            width: 50%;
+            // border: 1px solid red;
+            h2{
+                font-weight: 800;
+                text-transform: uppercase;
+                font-size: 120px;
+                line-height: 120px;
+            }
+            h3{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                padding: 20px 0;
+            }
+
+            .search-wrapper{
+                padding-top: 30px;
+                width: 80%;
+                height: 60px;
+                display: flex;
+
+
+                .email-field{
+                //    border: 1px solid red;
+                    height: 60px;
+                    width: 95%;
+                    font-size: 20px;
+                    padding: 0 10px;
+                    border: none;
+                }
+    
+                .search_button{
+                    height: 60px;
+                    width: 100px;
+                    // border: 1px solid green;
+                    background: #5747e2;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    padding: 0 25px;
+                    display: flex;
+                    justify-content: center;
+                    border: none;
+
+                }
+            }
+        }
+        
+        
+    }
+}
