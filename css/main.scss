@@ -154,6 +154,7 @@ body{
 
             img{
                 width: auto;
+                border-radius: 50px;
             }
         }
     } //figure wrapper
@@ -255,7 +256,6 @@ body{
             font-weight: 700;
             line-height: 96px;
             text-align: center;
-    
         }
     
         span{
@@ -309,7 +309,111 @@ body{
                 // border: 1px solid red;
             }
         }
-    } //team
+    } //team 
+}//fourth section
 
+//fifth section
+.fifth-section{
+    width: 100%;
+    height: auto;
+    background: #163952;
+    // border: 1px solid white;
+
+
+    .content-wrapper{
+        padding: 100px 150px;
+        // border: 1px solid red;
+
+        h2{
+            color: #F3E9E0;
+            text-align: center;
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 96px;
+        }
+    }
+
+    .slider{
+        display: flex;
+        // border: 1px solid red;
+        padding: 100px 150px;
+
+        
+        .left-content{
+            font-size: 32px;
+            width: 50%;
+            // border: 1px solid blue;
+            padding: 100px 150px;
+
+            p{
+                text-transform: uppercase;
+                font-weight: 800;
+                letter-spacing: 1px;
+                margin-bottom: 13px;
+            }
+
+            p:hover{
+                text-decoration: underline;
+            }
+
+            .color-one{
+                color: #FCBFBE;
+            }
+
+            .color-two{
+                color: #3C4BC4;
+            }
+            .color-three{
+                color: #F6C8A8;
+            }
+            .color-four{
+                color: #FFE3E2;
+            }
+
+            .color-five{
+                color: #E18543
+            }
+
+            .color-six{
+                color: #FEE250;
+            }
+
+            .button-sign-up{
+                width: 100%;
+                margin: 107px 0 0;
     
+                .sign-up-btn{
+                    padding: 15px 30px;
+                    background: #F3E9E0;
+                    color: #173952;
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            }
+
+        }// left-content
+
+        .slider-image{
+            border: 1px solid white;
+            width: 50%;
+            height: 559px;
+            overflow: scroll;
+            
+            figure{
+                border: 1px solid yellow;
+                img{
+                    width: 100%;
+                    height: 482px;
+                }
+
+                figcaption{
+                    text-align: center;
+                    color: #fff;
+                }
+            } //figure
+        } //slider-image
+    }
 }

@@ -191,6 +191,7 @@ body {
 
 .slide-wrapper .content .figure-wrapper figure img {
   width: auto;
+  border-radius: 50px;
 }
 
 .slide-wrapper .content .figure-content {
@@ -348,5 +349,108 @@ body {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+}
+
+.fifth-section {
+  width: 100%;
+  height: auto;
+  background: #163952;
+}
+
+.fifth-section .content-wrapper {
+  padding: 100px 150px;
+}
+
+.fifth-section .content-wrapper h2 {
+  color: #F3E9E0;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.fifth-section .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 150px;
+}
+
+.fifth-section .slider .left-content {
+  font-size: 32px;
+  width: 50%;
+  padding: 100px 150px;
+}
+
+.fifth-section .slider .left-content p {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 13px;
+}
+
+.fifth-section .slider .left-content p:hover {
+  text-decoration: underline;
+}
+
+.fifth-section .slider .left-content .color-one {
+  color: #FCBFBE;
+}
+
+.fifth-section .slider .left-content .color-two {
+  color: #3C4BC4;
+}
+
+.fifth-section .slider .left-content .color-three {
+  color: #F6C8A8;
+}
+
+.fifth-section .slider .left-content .color-four {
+  color: #FFE3E2;
+}
+
+.fifth-section .slider .left-content .color-five {
+  color: #E18543;
+}
+
+.fifth-section .slider .left-content .color-six {
+  color: #FEE250;
+}
+
+.fifth-section .slider .left-content .button-sign-up {
+  width: 100%;
+  margin: 107px 0 0;
+}
+
+.fifth-section .slider .left-content .button-sign-up .sign-up-btn {
+  padding: 15px 30px;
+  background: #F3E9E0;
+  color: #173952;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fifth-section .slider .slider-image {
+  border: 1px solid white;
+  width: 50%;
+  height: 559px;
+  overflow: scroll;
+}
+
+.fifth-section .slider .slider-image figure {
+  border: 1px solid yellow;
+}
+
+.fifth-section .slider .slider-image figure img {
+  width: 100%;
+  height: 482px;
+}
+
+.fifth-section .slider .slider-image figure figcaption {
+  text-align: center;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
