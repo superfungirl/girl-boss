@@ -49,7 +49,9 @@ body{
                         display: block;
                         padding: 15px 30px;
                         text-transform: uppercase;
-                        margin-left: 10px;   
+                        margin-left: 10px; 
+                        cursor: pointer;
+
                     }
                     .transparent{
                         background: transparent;
@@ -80,6 +82,8 @@ body{
                 font-weight: 800;
                 font-size: 120px;
                 line-height: 120px;
+	            text-transform: uppercase;
+
             }
             p{
                 font-weight: 400;
@@ -116,6 +120,7 @@ body{
                     display: flex;
                     justify-content: center;
                     border: none;
+                    cursor: pointer;
 
                 }
             }
@@ -164,6 +169,8 @@ body{
             font-size: 96px;
             font-weight: 700;
             line-height: 96px;
+	        text-transform: uppercase;
+
             // align-self: center;
         }
 
@@ -173,6 +180,136 @@ body{
             line-height: 36px;
             padding: 20px 0;
         }
+    } //figure-content
+} //content
+} //slide-wrapper
+
+// third section
+
+.third-section{
+    width: 100%;
+    height: auto;
+    background: #5747E2;
+    color: #F3E9E0;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+
+    .post-reply{
+        padding: 100px 150px;
+        width: 75%;
+        // border: 1px solid red;
+
+        h2{
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 96px;
+            text-align: center;
+            padding: 0 0 20px;
+	        text-transform: uppercase;
+
+        
+        }
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 36px;
+            text-align: center;
+            text-align: center;
+
+            // padding: 20px 0;
+        }
+
+        figure{
+            // border: 1px solid red;
+            width: 100%;
+            display: flex;
+            padding-top: 30px;
+            flex-direction: column;
+
+            img{
+                width: 500px;
+                align-self: center;
+                // height: 250px;
+            }
+        }
     }
 }
+
+//fourth section
+
+.fourth-section{
+    width: 100%;
+    height: auto;
+    background: #F3E9E1;
+    // border: 1px solid red;
+
+
+    .team{
+        padding: 100px 0;
+        // border: 1px solid blue;
+        
+        h2{
+            text-transform: uppercase;
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 96px;
+            text-align: center;
+    
+        }
+    
+        span{
+            text-transform: lowercase;
+            font-style: italic;
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .gallery{
+            display: flex;
+            overflow: scroll;
+            padding: 50px 0;
+    
+            figure{
+                img{
+                    width: 403.19px;
+                    height: 395.63px;
+                    margin: 0 15px;
+                }
+                figcaption{
+                    text-align: center;
+                    em{
+                        font-size: 22px;
+                        line-height: 26px;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 27px;
+    
+                    }
+                }
+            }
+        } //gallery
+
+        .button-sign-up{
+            width: 100%;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: center;
+
+            .sign-up-btn{
+                padding: 15px 30px;
+                background: #000;
+                color: #fff;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-align: center;
+                cursor: pointer;
+                // border: 1px solid red;
+            }
+        }
+    } //team
+
+    
 }

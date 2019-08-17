@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,900&display=swap");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -55,10 +43,6 @@ table {
 
 button, input {
   outline: 0;
-}
-
-h2 {
-  text-transform: uppercase;
 }
 
 * {
@@ -115,6 +99,7 @@ body {
   padding: 15px 30px;
   text-transform: uppercase;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .wrapper header .nav ul li .transparent {
@@ -141,6 +126,7 @@ body {
   font-weight: 800;
   font-size: 120px;
   line-height: 120px;
+  text-transform: uppercase;
 }
 
 .wrapper .main article p {
@@ -182,6 +168,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
+  cursor: pointer;
 }
 
 .slide-wrapper {
@@ -225,6 +212,7 @@ body {
   font-size: 96px;
   font-weight: 700;
   line-height: 96px;
+  text-transform: uppercase;
 }
 
 .slide-wrapper .content .figure-content p {
@@ -232,5 +220,133 @@ body {
   font-weight: 400;
   line-height: 36px;
   padding: 20px 0;
+}
+
+.third-section {
+  width: 100%;
+  height: auto;
+  background: #5747E2;
+  color: #F3E9E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third-section .post-reply {
+  padding: 100px 150px;
+  width: 75%;
+}
+
+.third-section .post-reply h2 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  text-align: center;
+  padding: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.third-section .post-reply p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  text-align: center;
+}
+
+.third-section .post-reply figure {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.third-section .post-reply figure img {
+  width: 500px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.fourth-section {
+  width: 100%;
+  height: auto;
+  background: #F3E9E1;
+}
+
+.fourth-section .team {
+  padding: 100px 0;
+}
+
+.fourth-section .team h2 {
+  text-transform: uppercase;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 96px;
+  text-align: center;
+}
+
+.fourth-section .team span {
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.fourth-section .team .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  padding: 50px 0;
+}
+
+.fourth-section .team .gallery figure img {
+  width: 403.19px;
+  height: 395.63px;
+  margin: 0 15px;
+}
+
+.fourth-section .team .gallery figure figcaption {
+  text-align: center;
+}
+
+.fourth-section .team .gallery figure figcaption em {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.fourth-section .team .gallery figure figcaption p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.fourth-section .team .button-sign-up {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fourth-section .team .button-sign-up .sign-up-btn {
+  padding: 15px 30px;
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
