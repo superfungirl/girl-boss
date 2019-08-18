@@ -545,9 +545,9 @@ footer{
     .footer{
         padding: 0 150px 100px;
         display: flex;
-        justify-content: space-between;
 
         .footer-icons{
+            flex: 1;
             ul{
                 li{
                     a{
@@ -565,6 +565,7 @@ footer{
     
     
         .footer-more{
+            flex: 2;
             ul{
                 li{
                     a{
@@ -590,7 +591,7 @@ footer{
         }
     
         .footer-social-icons{
-
+            
             figure{
                 img{
                     width: 48px;
