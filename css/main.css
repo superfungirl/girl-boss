@@ -45,6 +45,10 @@ button, input {
   outline: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -434,14 +438,9 @@ body {
 }
 
 .fifth-section .slider .slider-image {
-  border: 1px solid white;
   width: 50%;
-  height: 559px;
+  height: 552px;
   overflow: scroll;
-}
-
-.fifth-section .slider .slider-image figure {
-  border: 1px solid yellow;
 }
 
 .fifth-section .slider .slider-image figure img {
@@ -450,7 +449,173 @@ body {
 }
 
 .fifth-section .slider .slider-image figure figcaption {
+  margin: 26px 0 10px;
   text-align: center;
   color: #fff;
+}
+
+.fifth-section .slider .slider-image figure figcaption p {
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.fifth-section .slider .slider-image figure figcaption em {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.fifth-section .slider .slider-image figure figcaption em:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.required-reading {
+  background: #fee250;
+  width: 100%;
+  height: auto;
+}
+
+.required-reading .inner {
+  padding: 100px 150px 10px;
+  color: #193952;
+}
+
+.required-reading .inner h2 {
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 120px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.required-reading .read-books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.required-reading .read-books figure {
+  width: 327px;
+  height: 334px;
+}
+
+.required-reading .read-books figure img {
+  width: 325px;
+  height: 167px;
+}
+
+.required-reading .read-books figure figcaption p {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #193952;
+}
+
+.required-reading .read-books figure figcaption p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.required-reading .read-books figure figcaption p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.required-reading .read-books figure .read-more {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.required-reading .read-books figure .read-more .read-more-img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.required-reading .read-books figure .read-more span {
+  font-size: 16px;
+}
+
+.required-reading .read-books figure .read-more span a {
+  color: #193952;
+  font-style: italic;
+}
+
+.required-reading .read-books figure .read-more a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  height: auto;
+}
+
+footer .logo {
+  padding: 100px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .logo img {
+  width: 60px;
+}
+
+footer .footer {
+  padding: 0 150px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer .footer-icons ul li a {
+  font-size: 18px;
+  color: #fff;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+footer .footer .footer-icons ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .footer .footer-more ul li a {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+footer .footer .footer-more ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .footer .footer-more ul li .career {
+  color: #d0e4cb;
+}
+
+footer .footer .footer-more ul li .money {
+  color: #ff938c;
+}
+
+footer .footer .footer-more ul li .life {
+  color: #fdedb2;
+}
+
+footer .footer .footer-social-icons figure img {
+  width: 48px;
+  height: 48px;
+  margin: 5px 0;
 }
 /*# sourceMappingURL=main.css.map */
