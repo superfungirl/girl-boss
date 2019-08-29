@@ -12,11 +12,15 @@
     <section class="wrapper">
         <header>
             <nav class="nav">
-                <a href="#">
-                    <img src="images/logo.png" class="logo-image">
-                </a>
+                <figure class="logo-container">
+                    <a href="#"><img src="images/logo.png" class="logo-image"></a>
+                </figure>
+                <figure class="alt-logo-container">
+                    <a href="#"><img src="images/tiny-logo-image.png" class="tiny-logo-image"></a>
+                </figure>
+
                 <ul>
-                    <li><a class="nav-links transparent" href="#">Log In</a></li>
+                    <li><a class="nav-links transparent" href="#">Log in</a></li>
                     <li><a class="nav-links background" href="#">Join</a></li>
                 </ul>
             </nav>
@@ -24,7 +28,7 @@
 
         <!-- main -->
         <section class="main">
-            <article>
+            <article class="first-page">
                 <h2>Ambition begins here.</h2>
                 <p>A professional network for a new era.</p>
 
@@ -32,17 +36,22 @@
                     <input class="email-field" type="email" placeholder="ceo@mylife.com">
                     <input class="search_button" type="submit" value="Join Now">
                 </form>
-
             </article>
+
+            <!-- show only on smaller screen -->
+            <figure class="front-image-wrapper">
+                <img src="images/front-image.png">
+            </figure>
         </section>
-    </section>
+    </section> 
+    <!--first section ends-->
 
     <!-- Second section -->
     <section class="slide-wrapper">
         <section class="content">
             <article class="figure-wrapper">
-                <figure>
-                    <img src="images/phone.png" alt="Girlboss phone display">
+                <figure class="image-wrapper">
+                    <img class="girlboss-phone-display" src="images/phone.png" alt="Girlboss phone display">
                 </figure>
             </article>
     
@@ -61,7 +70,7 @@
             <p>Where women support women.</p>
             <p>Ask and answer, find advice, celebrate wins.</p>
 
-            <figure>
+            <figure class="gallery-wrapper">
                 <img src="images/post-lead.png" alt="Post lead">
                 <img src="images/reply-2.png" alt="Post lead">
                 <img src="images/reply1.png" alt="Post lead">
@@ -74,8 +83,10 @@
 
     <section class="fourth-section">
         <section class='team'>
-            <h2><span>Plus</span> Weekly </h2>
-            <h2>Digital Firesides</h2>
+            <article class="fourth-section-content-wrapper">
+                <h2><span>Plus</span> Weekly </h2>
+                <h2>Digital Firesides</h2>
+            </article>
 
             <!-- gallery -->
             <section class="gallery">
@@ -86,6 +97,7 @@
                         <p>CO-FOUNDER, AWAY</p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/team2.jpg" alt= "Jen Rubio">
                     <figcaption>
@@ -93,6 +105,7 @@
                         <p>FOUNDER, SONG OF STYLE</p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/team3.jpg" alt= "Jen Rubio">
                     <figcaption>
@@ -100,6 +113,7 @@
                         <p>AUTHOR, AWARD-WINNING JOURNALIST</p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/team4.jpg" alt= "Jen Rubio">
                     <figcaption>
@@ -107,6 +121,7 @@
                         <p>FOUNDER, SONG OF STYLE</p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/team5.jpg" alt= "Jen Rubio">
                     <figcaption>
@@ -114,6 +129,7 @@
                         <p>FOUNDER AND CEO, THRIVE GLOBAL</p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/team6.jpg" alt= "Jen Rubio">
                     <figcaption>
@@ -121,8 +137,9 @@
                         <p>CMO, ENDEAVOR</p>
                     </figcaption>
                 </figure>
+                
             </section> <!--gallery-->
-             
+                
             <section class="button-sign-up">
                 <button class="sign-up-btn">Sign up for free</button>
             </section>
@@ -157,6 +174,7 @@
                         <p>CO-FOUNDER, AWAY</p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/marketer3.jpg" alt ="Marketer">
                     <figcaption>
@@ -164,6 +182,7 @@
                         <p>AUTHOR, AWARD-WINNING JOURNALIST</p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/marketer4.jpg" alt ="Marketer">
                     <figcaption>
@@ -171,6 +190,7 @@
                         <p>CMO, ENDEAVOR</p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <img src="images/marketer2.jpg" alt ="Marketer">
                     <figcaption>
@@ -178,10 +198,18 @@
                         <p>FOUNDER, SONG OF STYLE</p>
                     </figcaption>
                 </figure>
-            </article>
-        </section>
 
+            </article> <!--slider image-->
+
+            <!-- smaller screen -->
+            <section class="button-sign-up-sm">
+                <button class="sign-up-btn">Sign up for free</button>
+            </section>
+
+        </section> <!--slider-->
     </section>
+
+    <!-- fifth section ends -->
 
     <!-- Required Reading Section -->
 
@@ -226,53 +254,56 @@
         </section><!--read-books-->
     </section>
 
-    <!-- footer -->
+    
+<!-- footer -->
 
-    <footer>
-        <a class="logo" href="#">
-            <img src="images/tiny-logo.png">
-        </a>
+<footer class="footer-section">
+    <a class="logo" href="#">
+        <img src="images/tiny-logo.png">
+    </a>
 
-        <section class="footer">
-            <section class="footer-icons">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Girlboss Rally</a></li>
-                    <li><a href="#">Community Guidelines</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">We're Hiring!</a></li>
-                    <li><a href="#">Foundation</a></li>
-                </ul>
-            </section>
-            
-            <section class="footer-more">
-                <ul>
-                    <li><a class="career" href="#">Career</a></li>
-                    <li><a class="money" href="#">Money</a></li>
-                    <li><a class="life" href="#">Life</a></li>
-                </ul>
-            </section>
+    <section class="footer">
+        <section class="footer-icons">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Girlboss Rally</a></li>
+                <li><a href="#">Community Guidelines</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">We're Hiring!</a></li>
+                <li><a href="#">Foundation</a></li>
+            </ul>
+        </section>
+        
+        <section class="footer-more">
+            <ul>
+                <li><a class="career" href="#">Career</a></li>
+                <li><a class="money" href="#">Money</a></li>
+                <li><a class="life" href="#">Life</a></li>
+            </ul>
+        </section>
 
-            <section class="footer-social-icons">
-                <figure>
-                    <a href="#"><img src="images/facebook.svg"></a>
-                </figure>
-                <figure>
-                    <a href="#"><img src="images/twitter.svg"></a>
-                </figure>
-                <figure>
-                    <a href="#"><img src="images/instagram.svg"></a>
-                </figure>
-                <figure>
-                    <a href="#"><img src="images/pinterest.svg"></a>
-                </figure>
-                <figure>
-                    <a href="#"><img src="images/linkedin.svg"></a>
-                </figure>
-            </section>
-        </section> <!--footer-icons-->
-    </footer>
+        <section class="footer-social-icons">
+            <figure>
+                <a href="#"><img src="images/facebook.svg"></a>
+            </figure>
+            <figure>
+                <a href="#"><img src="images/twitter.svg"></a>
+            </figure>
+            <figure>
+                <a href="#"><img src="images/instagram.svg"></a>
+            </figure>
+            <figure>
+                <a href="#"><img src="images/pinterest.svg"></a>
+            </figure>
+            <figure>
+                <a href="#"><img src="images/linkedin.svg"></a>
+            </figure>
+        </section>
+    </section> <!--footer-icons-->
+</footer>
+
+   
     
 </body>
 </html>
