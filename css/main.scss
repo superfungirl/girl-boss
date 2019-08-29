@@ -68,7 +68,14 @@ $mob-s: 320px;
     background: #F3E9E1 url(../images/front-image.png) no-repeat 85% 100%;
     background-size: 45%;
 
-    @include sm {
+    @include sm{
+        width: 100%;
+        height: 100%;
+        background-image: none;
+        overflow: hidden;
+    }
+
+    @include md{
         width: 100%;
         height: 100%;
         background-image: none;
@@ -95,17 +102,13 @@ $mob-s: 320px;
         padding: 20px 150px;
         @include sm {
             padding: 20px 0;
-            // border: 1px solid blue;
+        }
+        @include md {
+            padding: 20px 0;
         }
 
         .nav{
             display: flex;
-
-            @include sm {
-                // border: 1px solid red;
-                
-            }
-
             .logo-container{
                 // border: 1px solid red;
                 
@@ -115,7 +118,9 @@ $mob-s: 320px;
     
                     @include sm {
                         display: none;
-                        // border: 1px solid red;
+                    }
+                    @include md {
+                        display: none;
                     }
                 }     //logo image
             } //logo-container
@@ -128,12 +133,22 @@ $mob-s: 320px;
                     width: 80.5px;
                     height: 80px; 
                 }
+                @include md {
+                    display: block;
+                    width: 80.5px;
+                    height: 80px; 
+                }
 
                 .tiny-logo-image{
                     display: none;
         
                         @include sm {
-                            // border: 1px solid red;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        } //mixin
+
+                        @include md {
                             display: block;
                             width: 100%;
                             height: 100%;
@@ -154,6 +169,10 @@ $mob-s: 320px;
                     flex: 1;
                     justify-content: space-around;
                 } //mixin
+                @include md {
+                    flex: 1;
+                    justify-content: space-around;
+                } //mixin
 
                 li{
                     list-style-type: none;
@@ -168,6 +187,12 @@ $mob-s: 320px;
                         cursor: pointer;
 
                         @include sm {
+                            margin: 0; 
+                            padding: 15px 20px;
+                            font-size: 15px;
+                        } //mixin
+
+                        @include md {
                             margin: 0; 
                             padding: 15px 20px;
                             font-size: 15px;
@@ -202,16 +227,23 @@ $mob-s: 320px;
             height: 100%;
             overflow: hidden;
             padding: 0;
-            
+        }
+        @include md {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: 0;
         }
         .first-page{
             width: 50%;
 
             @include sm {
                 width: 100%;
-                // border: 1px solid green;
                 padding: 25px 15px;
-
+            }
+            @include md {
+                width: 100%;
+                padding: 25px 15px;
             }
 
             h2{
@@ -224,6 +256,10 @@ $mob-s: 320px;
                     font-size: 3rem;
                     line-height: 1;
                 }
+                @include md {
+                    font-size: 3rem;
+                    line-height: 1;
+                }
             }
             p{
                 font-weight: 400;
@@ -232,6 +268,10 @@ $mob-s: 320px;
                 padding: 20px 0;
 
                 @include sm {
+                    font-size: 19px;
+                    line-height: 1;
+                }
+                @include md {
                     font-size: 19px;
                     line-height: 1;
                 }
@@ -247,6 +287,10 @@ $mob-s: 320px;
                     width: 100%;
                     display: inline-flex;
                 }
+                @include md {
+                    width: 100%;
+                    display: inline-flex;
+                }
 
 
                 .email-field{
@@ -257,6 +301,12 @@ $mob-s: 320px;
                     border: none;
 
                     @include sm {
+                        width: 65%;
+                        height: 100%;
+                        font-size: 1rem;
+                        padding: 0 0 0 15px;
+                    }
+                    @include md {
                         width: 65%;
                         height: 100%;
                         font-size: 1rem;
@@ -284,13 +334,22 @@ $mob-s: 320px;
                         font-size: 1rem;
                         padding: 0;
                     }
-
+                    @include md {
+                        width: 35%;
+                        height: 100%;
+                        font-size: 1rem;
+                        padding: 0;
+                    }
                 }
             }
         } //article
 
         .front-image-wrapper{
             @include sm {
+                width: 312px;
+                height: 242.22px
+            }
+            @include md {
                 width: 312px;
                 height: 242.22px
             }
@@ -303,7 +362,11 @@ $mob-s: 320px;
                     width: 100%;
                     height: 100%;
                 }
-
+                @include md {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
         
@@ -323,7 +386,11 @@ $mob-s: 320px;
         width: 100%;
         height: 100%;
         overflow: hidden;
-        
+    }
+    @include md {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
     
     //CONTENT
@@ -338,12 +405,21 @@ $mob-s: 320px;
             flex-direction: column-reverse;
             // padding: 0 0 40px;
             padding: 70px 0;   
+        }
+        @include md {
+            flex-direction: column-reverse;
+            // padding: 0 0 40px;
+            padding: 70px 0;   
 
         }
     
     
         .figure-wrapper{
             @include sm {
+                display: flex;
+                justify-content: center;
+            }
+            @include md {
                 display: flex;
                 justify-content: center;
             }
@@ -356,6 +432,10 @@ $mob-s: 320px;
                     width: 80%;
                     height: 100%;
                 }
+                @include md {
+                    width: 80%;
+                    height: 100%;
+                }
     
     
                 .girlboss-phone-display{
@@ -363,6 +443,9 @@ $mob-s: 320px;
                     border-radius: 50px;
     
                     @include sm {
+                        width: 100%;
+                    }
+                    @include md {
                         width: 100%;
                     }
                 }
@@ -382,6 +465,12 @@ $mob-s: 320px;
                 display: flex;
                 justify-content: center;
             }
+            @include md {
+                margin: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
             
             h2{
                 font-size: 96px;
@@ -390,6 +479,13 @@ $mob-s: 320px;
                 text-transform: uppercase;
                  
                 @include sm {
+                    font-size: 3.4rem;
+                    line-height: 1;
+                    font-weight: 800;
+                    text-align: center;
+                    padding: 0 0 30px
+                }
+                @include md {
                     font-size: 3.4rem;
                     line-height: 1;
                     font-weight: 800;
@@ -408,6 +504,12 @@ $mob-s: 320px;
     
     
                 @include sm {
+                    text-align: center;
+                    font-size: 20px;
+                    line-height: 30px;
+                    padding: 0 0 30px
+                }
+                @include md {
                     text-align: center;
                     font-size: 20px;
                     line-height: 30px;
@@ -433,12 +535,20 @@ $mob-s: 320px;
     @include sm {
         padding: 90px 0;
     }
+    @include md {
+        padding: 90px 0;
+    }
+
 
     .post-reply{
         padding: 100px 150px;
         width: 75%;
 
         @include sm {
+            width: 100%;
+            padding: 0;
+        }
+        @include md {
             width: 100%;
             padding: 0;
         }
@@ -457,8 +567,11 @@ $mob-s: 320px;
                 line-height: 36px;
                 padding: 0 0 30px
             }
-
-        
+            @include md {
+                font-size: 2.5rem;
+                line-height: 36px;
+                padding: 0 0 30px
+            }        
         }
         p{
             font-size: 24px;
@@ -471,7 +584,11 @@ $mob-s: 320px;
                 text-align: center;
                 font-size: 20px;
                 line-height: 30px;
-                // padding: 0 0 30px
+            }
+            @include md {
+                text-align: center;
+                font-size: 20px;
+                line-height: 30px;
             }
         } 
 
@@ -488,6 +605,9 @@ $mob-s: 320px;
                 // height: 250px;
 
                 @include sm {
+                    width: 100%;
+                }
+                @include md {
                     width: 100%;
                 }
             }
@@ -508,6 +628,10 @@ $mob-s: 320px;
         padding: 40px 0;
         height: auto;
     }
+    @include md {
+        padding: 40px 0;
+        height: auto;
+    }
 
 
     .team{
@@ -521,6 +645,9 @@ $mob-s: 320px;
             @include sm {
                 padding: 0 0 10px;
             }
+            @include md {
+                padding: 0 0 10px;
+            }
 
             h2{
                 text-transform: uppercase;
@@ -530,6 +657,10 @@ $mob-s: 320px;
                 text-align: center;
                 
                 @include sm {
+                    font-size: 2.5rem;
+                    line-height: 1;
+                }
+                @include md {
                     font-size: 2.5rem;
                     line-height: 1;
                 }
@@ -553,6 +684,11 @@ $mob-s: 320px;
                 overflow-x: scroll;
                 overflow-y: hidden;
             }
+            @include md {
+                display: flex;
+                overflow-x: scroll;
+                overflow-y: hidden;
+            }
     
             figure{
 
@@ -560,7 +696,11 @@ $mob-s: 320px;
                     width: 100%;
                     height: 100%;
                     margin: 0 15px;                    
-
+                }
+                @include md {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 15px;                    
                 }
 
                 img{
@@ -572,11 +712,19 @@ $mob-s: 320px;
                         height: 100%;
                         object-fit: cover;
                     }
+                    @include md {
+                        width: 100vw;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
                 figcaption{
                     text-align: center;
 
                     @include sm {
+                        font-size: 22px;     
+                    }
+                    @include md {
                         font-size: 22px;     
                     }
                     em{
@@ -600,6 +748,9 @@ $mob-s: 320px;
             justify-content: center;
 
             @include sm {
+                padding: 40px 0 20px;     
+            }
+            @include md {
                 padding: 40px 0 20px;     
             }
 
@@ -627,6 +778,10 @@ $mob-s: 320px;
     @include sm {
             padding: 50px 0;
         }
+        @include md {
+            padding: 50px 0;
+        }
+
 
 
     .content-wrapper{
@@ -634,6 +789,9 @@ $mob-s: 320px;
         // border: 1px solid red;
 
         @include sm {
+            padding: 0;
+        }
+        @include md {
             padding: 0;
         }
 
@@ -645,6 +803,11 @@ $mob-s: 320px;
             line-height: 96px;
 
             @include sm {
+                font-size: 2.5rem;
+                line-height: 1;
+            
+            }
+            @include md {
                 font-size: 2.5rem;
                 line-height: 1;
             
@@ -661,6 +824,10 @@ $mob-s: 320px;
             padding: 0;
             display: block;
         }
+        @include md {
+            padding: 0;
+            display: block;
+        }
 
         
         .left-content{
@@ -673,6 +840,10 @@ $mob-s: 320px;
                 width: 100%;
                 padding: 0;
             }
+            @include md {
+                width: 100%;
+                padding: 0;
+            }
 
             p{
                 text-transform: uppercase;
@@ -681,6 +852,9 @@ $mob-s: 320px;
                 margin-bottom: 13px;
 
                 @include sm {
+                    display: none;
+                }
+                @include md {
                     display: none;
                 }
             }
@@ -728,6 +902,9 @@ $mob-s: 320px;
                     @include sm{
                         display: none;
                     }
+                    @include md{
+                        display: none;
+                    }
                 }
             }
 
@@ -745,10 +922,20 @@ $mob-s: 320px;
                 display: flex;
                 overflow-x: scroll;
             }
+            @include md {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                overflow-x: scroll;
+            }
             
             figure{
 
                 @include sm {
+                    width: 100%;
+                    height: 100%;
+                }
+                @include md {
                     width: 100%;
                     height: 100%;
                 }
@@ -758,6 +945,11 @@ $mob-s: 320px;
                     height: 482px;
 
                     @include sm {
+                        width: 90vw;
+                        height: 100%;
+                        margin: 0 10px;
+                    }
+                    @include md {
                         width: 90vw;
                         height: 100%;
                         margin: 0 10px;
@@ -810,6 +1002,24 @@ $mob-s: 320px;
 
                 } //btn
             } //sm
+            @include md{
+                display: block;
+                width: 100%;
+                margin: 80px 0 0;
+                text-align: center;
+    
+                .sign-up-btn{
+                    padding: 15px 30px;
+                    background: #F3E9E0;
+                    color: #173952;
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-align: center;
+                    cursor: pointer;
+
+                } //btn
+            } //sm
         } //button-sign-up-sm
     } // slider
 }
@@ -824,6 +1034,9 @@ $mob-s: 320px;
     @include sm {
         padding: 70px 0;
     }
+    @include md {
+        padding: 70px 0;
+    }
 
 
     .inner{
@@ -832,6 +1045,10 @@ $mob-s: 320px;
         // border: 1px solid red;
 
         @include sm {
+            padding: 20px 0;
+
+        }
+        @include md {
             padding: 20px 0;
 
         }
@@ -844,6 +1061,10 @@ $mob-s: 320px;
             text-align: center;
 
             @include sm {
+                font-size: 2.5rem;
+                line-height: 1;
+            }
+            @include md {
                 font-size: 2.5rem;
                 line-height: 1;
             }
@@ -860,6 +1081,10 @@ $mob-s: 320px;
             padding: 0;
             display: block;
         }
+        @include md {
+            padding: 0;
+            display: block;
+        }
 
         figure{
             // border: 4px solid brown;
@@ -868,6 +1093,10 @@ $mob-s: 320px;
             // margin: 0 15px; 
 
             @include sm {
+                width: 100%;
+                
+            }
+            @include md {
                 width: 100%;
                 
             }
@@ -885,6 +1114,12 @@ $mob-s: 320px;
                     margin: 0 auto;
                     display: block;
                 }
+                @include md {
+                    width: 280.8px;
+                    height: 157.94px;
+                    margin: 0 auto;
+                    display: block;
+                }
             }
 
             figcaption{
@@ -896,6 +1131,12 @@ $mob-s: 320px;
                     color: #193952;
 
                     @include sm {
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-align: left;
+                        padding: 15px;
+                    }
+                    @include md {
                         font-size: 16px;
                         font-weight: bold;
                         text-align: left;
@@ -921,8 +1162,10 @@ $mob-s: 320px;
                 @include sm {
                     display: flex;
                     padding: 15px;
-
-
+                }
+                @include md {
+                    display: flex;
+                    padding: 15px;
                 }
 
                 .read-more-img{
@@ -934,7 +1177,11 @@ $mob-s: 320px;
                         margin: 0;
                         width: 20px;
                         height: 15px;
-
+                    }
+                    @include md {
+                        margin: 0;
+                        width: 20px;
+                        height: 15px;
                     }
                 }
                 span{
@@ -942,7 +1189,9 @@ $mob-s: 320px;
 
                     @include sm {
                         font-size: 14px;
-
+                    }
+                    @include md {
+                        font-size: 14px;
                     }
 
                     a{
@@ -970,6 +1219,9 @@ footer{
     @include sm{
         padding: 100px 0;
     }
+    @include md{
+        padding: 100px 0;
+    }
 
     .logo{
         padding: 100px 150px;
@@ -978,10 +1230,17 @@ footer{
             padding: 0;
             text-align: center;
         }
+        @include md{
+            padding: 0;
+            text-align: center;
+        }
         img{
             width: 60px;
 
             @include sm{
+                margin: 0 auto;
+            }
+            @include md{
                 margin: 0 auto;
             }
         }
@@ -994,6 +1253,10 @@ footer{
         display: flex;
 
         @include sm{
+            display: inline;
+            text-align: center;
+        }
+        @include md{
             display: inline;
             text-align: center;
         }
@@ -1012,6 +1275,10 @@ footer{
                             font-size: 18px;
                             display: block;
                         }
+                        @include md{
+                            font-size: 18px;
+                            display: block;
+                        }
                     }
                     a:hover{
                         text-decoration: underline;
@@ -1027,6 +1294,9 @@ footer{
             @include sm{
                 padding: 20px 0 0;
             }
+            @include md{
+                padding: 20px 0 0;
+            }
             ul{
                 li{
                     a{
@@ -1035,6 +1305,9 @@ footer{
                         line-height: 48px; 
 
                         @include sm{
+                            display: block;
+                        }
+                        @include md{
                             display: block;
                         }
                         
@@ -1058,6 +1331,9 @@ footer{
     
         .footer-social-icons{
             @include sm{
+                padding: 20px 0 0;
+            }
+            @include md{
                 padding: 20px 0 0;
             }
             figure{
